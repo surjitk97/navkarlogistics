@@ -20,3 +20,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/about',function(){
+    return view('about');
+});
+
+
+Route::get('/our-services',function(){
+    return view('our-services');
+});
+Route::get('/service-area',function(){
+    return view('service-area');
+});
+Route::get('/contact-us',function(){
+    return view('contact-us');
+});
